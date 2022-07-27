@@ -68,9 +68,7 @@ tup  = 200;    % Input length of rest to solve for (when to tilt upwards)
 tend = tup + 100; % Input length of time for entire simulation
 
 [x0, Init] = load_global(kH,kR,BV); % Load in parameters from file "load_global.m"
-pars = [x0 tup tup height]; %Augment parameter vector with inputed quantities
-
-
+pars = [x0 tup tend height]; % Augment parameter vector with inputed quantities
 
 
 % Initialize empty vectors 
